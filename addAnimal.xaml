@@ -1,0 +1,42 @@
+﻿<Window x:Class="BIT706AS1.addAnimal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIT706AS1"
+        mc:Ignorable="d"
+        Title="addAnimal" SizeToContent="WidthAndHeight">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Customer Name:" HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Height="20" Width="160" Margin="0 0 0 10" x:Name="tbCustomerName"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Animal Name:" HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Height="20" Width="160" Margin="0 0 0 10" x:Name="tbAnimalName"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Type of Animal:" HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        <ComboBox Grid.Row="2" Grid.Column="1"  Height="20" Width="160" Margin="0 0 0 10" x:Name="animalType"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Age:" HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Height="20" Width="160" Margin="0 0 0 10" x:Name="tbAnimalAge"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Sex:" HorizontalAlignment="Right" Margin="0 0 10 0"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" Height="20" Width="160" Margin="0 0 0 10" x:Name="animalSex"/>
+
+        <Button Content="Cancel" Grid.Row="5" Grid.Column="0" Width="70" Height="20"  Click="Cancel_Click" />
+        <Button Content="Save" Grid.Row="5" Grid.Column="1" Width="70" Height="20" Click="Save_Click" />
+
+    </Grid>
+</Window>
